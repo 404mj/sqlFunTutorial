@@ -1,0 +1,1 @@
+create function dup (f1 anyelement, OUT f2 anyelement, OUT f3 anyarray) as 'select $1,array[$1,$2]' language sql;
